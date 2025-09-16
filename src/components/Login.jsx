@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../store/authSlice.js";
@@ -31,7 +32,7 @@ function Login() {
   return (
     <div className="flex items-center justify-center w-full">
       <div
-        className={`mx-auto w-full max-w-lg bg-white/40 my-8 rounded-xl p-10 border border-black/50`}
+        className={`mx-auto w-full max-w-lg bg-white/40 my-8 rounded-xl p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-[150px]">
@@ -51,7 +52,7 @@ function Login() {
           </Link>
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
-        <form onSubmit={handleSubmit(login)} className="mt-8 ">
+        <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
             <Input
               label="Email: "
@@ -95,8 +96,7 @@ function Login() {
                 )}
               </button>
             </div>
-            <Button type="submit" className="w-full 
-            active:bg-[#7b643b] active:text-black">
+            <Button type="submit" className="w-full active:bg-purple-500">
               Sign in
             </Button>
           </div>
