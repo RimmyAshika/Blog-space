@@ -23,8 +23,7 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between bg-gradient-to-t from-[#5f280c]  to-[#dec578]'>
-     {/* bg-[linear-gradient(90deg,_rgba(184,166,238,1)_0%,_rgba(151,128,215,1)_7%,_rgba(135,109,208,1)_21%,_rgba(158,117,211,1)_48%,_rgba(175,126,213,1)_77%,_rgba(195,152,221,1)_88%,_rgba(226,199,244,1)_100%)]'> */}
+    <div className='min-h-screen flex flex-wrap content-between bg-[linear-gradient(90deg,_rgba(184,166,238,1)_0%,_rgba(151,128,215,1)_7%,_rgba(135,109,208,1)_21%,_rgba(158,117,211,1)_48%,_rgba(175,126,213,1)_77%,_rgba(195,152,221,1)_88%,_rgba(226,199,244,1)_100%)]'>
       <div className='w-full block'>
         <Header />
         <main>
